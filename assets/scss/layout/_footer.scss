@@ -1,4 +1,124 @@
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+  background-color: $bg-secondary-color;
+  padding-top: 60.02px;
+  .footer_content{
+    display: $d-flex;
+    justify-content: $justify-between;
+    align-items: $align-items-center;
+    margin-bottom: 35.98px;
+  }
+}
+
+.footer_list{
+  display: $d-flex;
+  justify-content: $justify-between;
+  .footer_list_item{
+    margin-right: 24px;
+    .footer_list_link{
+      display: $d-block;
+      color: $text-white-color;
+    }
+  }
+}
+.footer_media{
+  display: $d-flex;
+  justify-content: $justify-between;
+  .footer__media_list{
+    width: 48px;
+    margin-left: 32px;
+  }
+}
+.footer_contact{
+  margin-bottom: 32px;
+  .footer_contact_list{
+    margin-bottom: 8px;
+    .footer_contact_link{
+      color: $text-white-color;
+      font-size: 36px;
+    }
+  }
+}
+.footer_copyright{
+  padding: 32px 0;
+  display: $d-flex;
+  justify-content: $justify-between;
+  .copyright{
+    color: $text-white-color;
+  }
+  .footer_policy{
+    display: $d-flex;
+    
+    .footer_policy_item{
+      color: $text-white-color;
+      margin-left: 48px;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width:$breakpoint-medium){
+  .footer{
+    padding: 48px 24px 0 24px;
+    .footer_content{
+      margin-bottom: 31.98px;
+    }
+  }
+  .footer_list{
+    .footer_list_item{
+      margin-right: 48px;
+    }
+  }
+  .footer_media{
+    .footer__media_list{
+      margin-left: 16px;
+    }
+  }
+  .footer_copyright{
+    padding: 40px 0;
+  }
+}
+@media (max-width:$breakpoint-small){
+  .footer{
+    padding: 24px 1px 24px 1px;
+    .footer_content{
+      float: right;
+    }
+  }
+  .footer_list{
+    display: none;
+  }
+  .footer_contact{
+    margin-bottom: 32px;
+    .footer_contact_list{
+      margin-bottom: 8px;
+      .footer_contact_link{
+        font-size: 16px;
+        .mr-20{
+          margin-right: 8px;
+          font-size: 24px;
+       }
+      }
+    }
+  }
+  .footer_media{
+    .footer__media_list{
+      width: 24px;
+      margin-left: 8px;
+    }
+  }
+  .footer_copyright{
+    display: $d-block;
+    padding: 8px 0 0 0;
+    .footer_policy{
+      display: $d-block;
+      padding: 8px 0 0 0;
+      .footer_policy_item{
+        margin-left: 0px;
+        padding: 8px 0 0 0;
+      }
+    }
+  }
+  
 }
