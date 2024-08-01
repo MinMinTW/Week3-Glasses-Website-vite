@@ -118,12 +118,12 @@ body {
   display: block;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 992px) {
   .header {
     padding: 25px 24px;
   }
 }
-@media (max-width: 376px) {
+@media (max-width: 576px) {
   .header {
     padding: 0 3px;
   }
@@ -231,7 +231,7 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 992px) {
   .footer {
     padding: 48px 24px 0 24px;
   }
@@ -248,7 +248,7 @@ body {
     padding: 40px 0;
   }
 }
-@media (max-width: 376px) {
+@media (max-width: 576px) {
   .footer {
     padding: 24px 1px 24px 1px;
   }
@@ -295,6 +295,20 @@ body {
   text-align: center;
 }
 
+@media (max-width: 576px) {
+  .l_title {
+    font-size: 24px;
+  }
+}
+.l_item_content {
+  font-size: 48px;
+  font-weight: 900;
+  font-style: italic;
+  text-align: center;
+  color: #AA0601;
+  margin-top: 8px;
+}
+
 .banner {
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
   height: 787px;
@@ -326,6 +340,27 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 992px) {
+  .banner {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true");
+    padding-right: 25px;
+    height: 396px;
+  }
+}
+@media (max-width: 576px) {
+  .banner {
+    padding-right: 2px;
+  }
+  .banner .banner_body {
+    padding-top: 144px;
+  }
+  .banner .banner_body .banner_content {
+    font-size: 16px;
+  }
+  .banner .banner_body .banner_title {
+    font-size: 24px;
+  }
+}
 .specialty {
   background-color: #FBF2F2;
   padding: 80px 0;
@@ -357,6 +392,34 @@ body {
   text-align: left;
 }
 
+@media (max-width: 992px) {
+  .specialty_list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0 24px;
+  }
+  .specialty_list .specialty_list_item {
+    width: 50%;
+  }
+  .specialty_list .specialty_list_item .specialty_item_pic {
+    width: 83.33px;
+  }
+}
+@media (max-width: 576px) {
+  .specialty {
+    padding: 40px 0;
+  }
+  .specialty_list {
+    padding: 0 1px;
+  }
+  .specialty_list .specialty_list_item {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  .specialty_list .specialty_list_item:last-child {
+    margin-bottom: 0;
+  }
+}
 .classic {
   padding: 80px 0;
 }
@@ -370,13 +433,366 @@ body {
   margin-top: 48px;
 }
 .classic .classic_list .classic_list_item {
-  max-width: 32.09%;
+  width: 32.09%;
 }
-.classic .classic_list .classic_list_item .classic_item_content {
+
+@media (max-width: 992px) {
+  .classic .classic_list {
+    display: block;
+  }
+  .classic .classic_list .classic_list_item {
+    margin: 0 auto;
+    width: 45.15%;
+    padding-bottom: 24px;
+  }
+  .classic .classic_list .classic_list_item:last-child {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 576px) {
+  .classic {
+    padding: 40px 1px;
+  }
+  .classic .classic_list {
+    margin-top: 24px;
+  }
+  .classic .classic_list .classic_list_item {
+    width: 100%;
+  }
+}
+.co-branding {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
+  height: 608px;
+  background-size: cover;
+  padding: 80px 0;
+}
+.co-branding .l_title {
+  color: #FFFFFF;
+}
+.co-branding .co-branding_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 48px;
+}
+.co-branding .co-branding_list .co-branding_list_item {
+  width: 50%;
+}
+.co-branding .co-branding_list .co-branding_list_item .co-branding_DOUBLEA {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true");
+  height: 240px;
+  background-size: cover;
+}
+.co-branding .co-branding_list .co-branding_list_item .co-branding_youth {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true");
+  height: 240px;
+  background-size: cover;
+}
+.co-branding .co-branding_list .co-branding_list_item .l_item_content {
+  background-color: #fff;
+  margin-top: 0;
+}
+
+@media (max-width: 992px) {
+  .co-branding {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true");
+    height: 960px;
+    padding: 80px 24px;
+  }
+  .co-branding .co-branding_list {
+    display: block;
+  }
+  .co-branding .co-branding_list .co-branding_list_item {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .co-branding .co-branding_list .co-branding_list_item:last-child {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 576px) {
+  .co-branding {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true");
+    background-position: center;
+    padding: 40px 1px;
+    height: 820px;
+  }
+  .co-branding .co-branding_list {
+    margin-top: 24px;
+  }
+  .co-branding .co-branding_list .co-branding_list_item .co-branding_DOUBLEA {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true");
+  }
+  .co-branding .co-branding_list .co-branding_list_item .co-branding_youth {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true");
+  }
+}
+.recommandation {
+  padding: 80px 0;
+}
+.recommandation .recommandation_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 48px;
+}
+.recommandation .recommandation_list .recommandation_list_item {
+  width: 23.6%;
+  height: 511px;
+  border: 1px solid #DEE2E6;
+  padding-bottom: 16px;
+  -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1607843137);
+          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 4px;
+  position: relative;
+}
+.recommandation .recommandation_list .recommandation_list_item .recommandation_name {
+  margin: 16px 0 8px 16px;
+}
+.recommandation .recommandation_list .recommandation_list_item .recommandation_content {
+  margin: 0px 0 0px 16px;
+}
+.recommandation .recommandation_list .recommandation_list_item .recommandation_date {
+  font-size: 14px;
+  color: #707070;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+}
+
+@media (max-width: 992px) {
+  .recommandation {
+    padding: 80px 24px 56px 24px;
+  }
+  .recommandation .recommandation_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 48px;
+  }
+  .recommandation .recommandation_list .recommandation_list_item {
+    width: 48.3%;
+    margin-bottom: 24px;
+  }
+  .recommandation .recommandation_list .recommandation_list_item .recommandation_name {
+    margin: 16px 0 8px 16px;
+  }
+  .recommandation .recommandation_list .recommandation_list_item .recommandation_content {
+    margin: 0px 0 0px 16px;
+  }
+}
+@media (max-width: 576px) {
+  .recommandation {
+    padding: 40px 1px;
+  }
+  .recommandation .recommandation_list {
+    margin-top: 24px;
+  }
+  .recommandation .recommandation_list .recommandation_list_item {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .recommandation .recommandation_list .recommandation_list_item:last-child {
+    margin-bottom: 0;
+  }
+}
+.contact {
+  background-color: #FBF2F2;
+  padding: 80px 0;
+}
+.contact .contact_form {
+  margin: 0 auto;
+  max-width: 33.1%;
+  padding: 48px 0;
+}
+.contact .contact_form .contact_intro {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+.contact .contact_form .contact_input_style {
+  margin: 8px 0 16px 0;
+  width: 100%;
+  padding: 6px 12px;
+}
+.contact .contact_form .contact_textarea_style {
+  margin: 8px 0 16px 0;
+  width: 100%;
+  padding: 6px 12px;
+  height: 136px;
+  resize: none;
+}
+.contact .contact_form .contact_btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 48px;
+  max-width: 416px;
+  width: 100%;
+  padding: 16px 0;
+  background: #AA0601;
+  color: #FFFFFF;
+  border: none;
+}
+.contact .contact_form .contact_btn:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .contact {
+    background-color: #FBF2F2;
+    padding: 80px 96px;
+  }
+  .contact .contact_form {
+    max-width: 100%;
+    padding: 0;
+  }
+  .contact .contact_form .contact_intro {
+    font-size: 16px;
+    margin-top: 24px;
+  }
+}
+@media (max-width: 576px) {
+  .contact {
+    padding: 40px 13px;
+  }
+  .contact .contact_form .contact_intro {
+    font-size: 16px;
+    margin-top: 24px;
+  }
+}
+.QA_body .QA_title {
   font-size: 48px;
-  font-weight: 900;
-  font-style: italic;
+  font-weight: bold;
+  border-left: 8px solid #9F1213;
+  padding-left: 16px;
+  margin-top: 96px;
+}
+.QA_body .QA_inquiry {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 32px 0 24px 0;
+}
+.QA_body .QA_list {
+  max-width: 856px;
+  padding-bottom: 48px;
+}
+.QA_body .QA_list .QA_item_topic {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.QA_body .QA_list .QA_item_content {
+  margin-bottom: 32px;
+}
+
+.series .series_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.series .series_list .series_list_item {
+  font-size: 32px;
+  font-weight: bold;
+  width: 100%;
+  padding: 24px 0;
+  border: 1px solid #DCDCDC;
   text-align: center;
-  color: #AA0601;
-  margin-top: 8px;
+  position: relative;
+}
+.series .series_list .series_list_item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  bottom: 0;
+  left: 0;
+  height: 8px;
+  background-color: #AA0601;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.series .series_list .series_list_item:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+.series .series_list .series_list_item:hover {
+  cursor: pointer;
+}
+.series .series_banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.series .series_banner .series_banner_img {
+  max-width: 50%;
+}
+
+.optical {
+  padding: 80px 0;
+}
+.optical .optical_title {
+  font-size: 42px;
+  text-align: center;
+  font-weight: bold;
+}
+.optical .optical_subtitle {
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+}
+.optical .optical_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 32px 0 0 0;
+}
+.optical .optical_list .optical_list_item {
+  max-width: 23.6%;
+  margin-bottom: 80px;
+}
+.optical .optical_list .optical_list_item .optical_item_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.optical .optical_list .optical_list_item .color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.optical .optical_list .optical_list_item .color .color1 {
+  width: 24px;
+  height: 24px;
+  background-color: #5F3E2D;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+.optical .optical_list .optical_list_item .color .color2 {
+  width: 24px;
+  height: 24px;
+  background-color: #B75929;
+  border-radius: 4px;
 }
