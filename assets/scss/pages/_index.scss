@@ -174,11 +174,20 @@
         color: $text-white-color;
     }
     .co-branding_list{
-        width: 50%;
         display: $d-flex;
         margin-top: 48px;
         .co-branding_list_item{
-            border: 1px solid #DEE2E6;
+            width: 50%;   
+            .co-branding_DOUBLEA{
+                background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true');
+                height: 240px;
+                background-size: cover;
+            }
+            .co-branding_youth{
+                background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true');
+                height: 240px;
+                background-size: cover;
+            }
             .l_item_content{
                 background-color: #fff;
                 margin-top: 0;
@@ -188,14 +197,13 @@
 }
 @media (max-width:$breakpoint-medium){
     .co-branding{
-        background-image:url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true');
+        background-image:url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true');
         height: 960px;
         padding: 80px 24px;
         .co-branding_list{
-            width: 100%;
             display: $d-block;
             .co-branding_list_item{
-                border: none;
+                width: 100%;
                 margin-bottom: 24px;
                 &:last-child{
                     margin-bottom: 0;
@@ -203,8 +211,25 @@
             }
         }
     }
-
-
+}
+@media (max-width:$breakpoint-small){
+    .co-branding{
+        background-image:url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true');
+        background-position: center;
+        padding: 40px 1px;
+        height: 820px;
+        .co-branding_list{
+            margin-top: 24px;
+            .co-branding_list_item{
+                .co-branding_DOUBLEA{
+                    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true');
+                }
+                .co-branding_youth{
+                    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true');
+                }
+            }
+        }
+    }
 }
 .recommandation{
     padding: 80px 0;
@@ -214,10 +239,12 @@
         margin-top: 48px;
         .recommandation_list_item{
             width: 23.6%;
+            height: 511px;
             border: 1px solid #DEE2E6;
             padding-bottom: 16px;
             box-shadow: 0px 2px 6px #00000029;
             border-radius: 4px;
+            position: relative;
             .recommandation_name{
                 margin: 16px 0 8px 16px;
             }
@@ -227,8 +254,9 @@
             .recommandation_date{
                 font-size: 14px;
                 color: #707070;
-                margin: 72px 0 0 16px;
-                
+                position: absolute;    
+                bottom: 16px;     
+                left: 16px;       
             }
         }
     }
@@ -250,11 +278,20 @@
                 .recommandation_content{
                     margin: 0px 0 0px 16px;
                 }
-                .recommandation_date{
-                    font-size: 14px;
-                    color: #707070;
-                    margin: 72px 0 0 16px;
-                    
+            }
+        }
+    }
+}
+@media (max-width:$breakpoint-small) {
+    .recommandation{
+        padding: 40px 1px;
+        .recommandation_list{
+            margin-top: 24px;
+            .recommandation_list_item{
+                width: 100%;
+                margin-bottom: 24px;
+                &:last-child{
+                    margin-bottom: 0;
                 }
             }
         }
@@ -309,6 +346,17 @@
         .contact_form{
             max-width: 100%;
             padding: 0;
+            .contact_intro{
+                font-size: 16px;
+                margin-top: 24px;
+            }
+        }
+    }
+}
+@media (max-width:$breakpoint-small){
+    .contact{ 
+        padding: 40px 13px;
+        .contact_form{
             .contact_intro{
                 font-size: 16px;
                 margin-top: 24px;
